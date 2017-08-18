@@ -15,6 +15,10 @@ public class Livre {
 		this.salle = salle;
 	}
 
+	
+	public String toString() {
+		return 	auteur;
+	}
 	public int getAnnee() {
 		return annee;
 	}

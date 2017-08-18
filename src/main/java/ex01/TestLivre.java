@@ -33,6 +33,13 @@ public class TestLivre {
 		System.out.println(bookslist);
 		
 		
+		LivreServices service = new LivreServices();
+		List <Livre> listefiltree=service.Listetri(bookslist, 2010, 2015);
+		
+		System.out.println(listefiltree);
+		
+		
+		
 		// TODO 4. Créer une classe LivreServices
 		// TODO 5. Dans la classe LivreServices, metrre en place une méthode qui prend en paramètre une liste de livres
 		//         et qui retourne la liste des livres parus entre 2 années
