@@ -1,5 +1,8 @@
 package ex01;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class TestLivre {
 
 	public static String[] auteurs = {"BASSO", "BERTRAND", "BONNET", "CELIKBAS", "DELPECHE", 
@@ -18,6 +21,18 @@ public class TestLivre {
 		// TODO 3. Dans cette classe TestLivre, instanciez une ArrayList de Livre. Mettre 12 livres dans cette liste:
 		//         Chaque livre sera instancié à partir des informations dans les tableaux ci-dessus. 
 
+		
+		List <Livre> bookslist = new ArrayList<Livre>();
+		
+				for (int i=0; i < auteurs.length; i++) {
+					
+					Livre monlivre = new Livre (annees[i], auteurs[i], nomsLivres[i], 1);
+					bookslist.add(monlivre);
+				}
+		
+		System.out.println(bookslist);
+		
+		
 		// TODO 4. Créer une classe LivreServices
 		// TODO 5. Dans la classe LivreServices, metrre en place une méthode qui prend en paramètre une liste de livres
 		//         et qui retourne la liste des livres parus entre 2 années
